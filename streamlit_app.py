@@ -24,9 +24,11 @@ st.experimental_data_editor(input_df)
 if st.button('Zjisti jméno'):
     if have_it == True:
         st.write('Stisknuto') 
+        st.write(have_it) 
         have_it = False
     else:
         st.write('Nestisknuto')
+        st.write(have_it)
         have_it = True
 
 
