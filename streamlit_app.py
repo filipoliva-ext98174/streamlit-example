@@ -14,9 +14,7 @@ st.title('Test editace metadat')
 have_it = None
 cnt = 1
 
-st.write(kbc_user_email) 
-st.write(original_host)
-st.write(app_trace_id)
+st.write(websocket_headers) 
 
 menu = ["Home","About"]
 choice = st.sidebar.selectbox("Menu",menu)
