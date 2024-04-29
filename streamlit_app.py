@@ -21,6 +21,11 @@ input_df = pd.DataFrame.from_dict({
 #st.write(input_df)
 st.experimental_data_editor(input_df)
 
+if st.button('Zjisti jméno'):
+    'Stisknuto'
+    #'We have that animal!' if have_it else 'We don\'t have that animal.'
+
+
 # Add a welcome message 
 #st.write('Welcome to my Streamlit app!') 
 # Create a text input 
