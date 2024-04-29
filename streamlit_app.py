@@ -20,13 +20,12 @@ input_df = pd.DataFrame.from_dict({
 
 #st.write(input_df)
 st.experimental_data_editor(input_df)
-
 if st.button('Zjisti jméno'):
     if have_it:
-        'Stisknuto'
+        st.write('Stisknuto') 
         #have_it = false
     else:
-        'Nestisknuto'
+        st.write('Nestisknuto')
         #have_it = true
 
 
