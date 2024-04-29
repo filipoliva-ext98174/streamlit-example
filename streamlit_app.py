@@ -4,7 +4,7 @@ import pandas as pd
 import json
 
 # Set the app title 
-st.title('My First Streamlit Appka') 
+st.title('Test editace metadat') 
 menu = ["Home","About"]
 choice = st.sidebar.selectbox("Menu",menu)
 if choice == "Home":
@@ -13,10 +13,11 @@ else:
     st.subheader("About")
 
 input_df = pd.DataFrame.from_dict({
-    'Jméno': ["some", "values"],
-    'Příjmení': ["other", "values"],
+    'Jméno': ["Filip", "Martin"],
+    'Příjmení': ["Ruka", "Noha"],
     'Score': [1555, 222],
 })
+
 #st.write(input_df)
 st.experimental_data_editor(input_df)
 
