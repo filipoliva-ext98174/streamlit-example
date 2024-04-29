@@ -30,6 +30,8 @@ input_df = pd.DataFrame.from_dict({
     'Score': [1555, 222],
 })
 
+out_df = input_df[Score>500]
+
 #st.write(input_df)
 st.experimental_data_editor(input_df)
 if st.button('Zjisti jméno'):
