@@ -13,8 +13,8 @@ else:
     st.subheader("About")
 
 input_df = pd.DataFrame.from_dict({
-    'field_1': [some, values],
-    'field_2': [other, values]
+    'field_1': ["some", "values"],
+    'field_2': ["other", "values"]
 })
 st.write(input_df)
 
