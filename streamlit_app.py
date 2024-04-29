@@ -17,7 +17,8 @@ input_df = pd.DataFrame.from_dict({
     'Příjmení': ["other", "values"],
     'Score': [1555, 222],
 })
-st.write(input_df)
+#st.write(input_df)
+st.experimental_data_editor(input_df)
 
 # Add a welcome message 
 #st.write('Welcome to my Streamlit app!') 
