@@ -9,7 +9,7 @@ menu = ["Home","About"]
 choice = st.sidebar.selectbox("Menu",menu)
 if choice == "Home":
     st.subheader("HomePage")
-else
+else:
     st.subheader("About")
 
 # Add a welcome message 
