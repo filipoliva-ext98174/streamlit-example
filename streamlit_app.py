@@ -14,7 +14,8 @@ else:
 
 input_df = pd.DataFrame.from_dict({
     'field_1': ["some", "values"],
-    'field_2': ["other", "values"]
+    'field_2': ["other", "values"],
+    'field_3': range(1, 2)
 })
 st.write(input_df)
 
