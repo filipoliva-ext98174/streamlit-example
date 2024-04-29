@@ -22,10 +22,10 @@ input_df = pd.DataFrame.from_dict({
 st.experimental_data_editor(input_df)
 
 if st.button('Zjisti jméno'):
-    if have_it
+    if have_it:
         'Stisknuto'
         have_it = false
-    else 'Nestisknuto'
+    else: 'Nestisknuto'
         have_it = true
 
 
