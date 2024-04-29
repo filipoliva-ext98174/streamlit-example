@@ -16,6 +16,7 @@ cnt = 1
 
 st.write(kbc_user_email) 
 st.write(original_host)
+st.write(app_trace_id)
 
 menu = ["Home","About"]
 choice = st.sidebar.selectbox("Menu",menu)
