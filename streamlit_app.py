@@ -22,8 +22,11 @@ input_df = pd.DataFrame.from_dict({
 st.experimental_data_editor(input_df)
 
 if st.button('Zjisti jméno'):
-    'Stisknuto'
-    #'We have that animal!' if have_it else 'We don\'t have that animal.'
+    if have_it
+        'Stisknuto'
+        have_it = false
+    else 'Nestisknuto'
+        have_it = true
 
 
 # Add a welcome message 
