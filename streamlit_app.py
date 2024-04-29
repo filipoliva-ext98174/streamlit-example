@@ -8,13 +8,14 @@ websocket_headers = _get_websocket_headers()
 kbc_user_email = websocket_headers.get('X-Kbc-User-Email', '')
 app_trace_id = websocket_headers.get('X-Appgw-Trace-Id', '')
 original_host = websocket_headers.get('X-Original-Host', '')
+host =  websocket_headers.get('Host', '')
 
 # Set the app title 
 st.title('Test editace metadat') 
 have_it = None
 cnt = 1
 
-st.write(websocket_headers) 
+st.write(host) 
 
 menu = ["Home","About"]
 choice = st.sidebar.selectbox("Menu",menu)
