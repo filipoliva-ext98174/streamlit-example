@@ -7,7 +7,7 @@ import json
 st.title('My First Streamlit Appka') 
 menu = ["Home","About"]
 choice = st.sidebar.selectbox("Menu",menu)
-if choice = "Home"
+if choice == "Home"
     st.subheader("HomePage")
 else
     st.subheader("About")
