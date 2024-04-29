@@ -22,7 +22,7 @@ input_df = pd.DataFrame.from_dict({
 #st.write(input_df)
 st.experimental_data_editor(input_df)
 if st.button('Zjisti jméno'):
-    if have_it:
+    if have_it == True:
         st.write('Stisknuto') 
         have_it = False
     else:
