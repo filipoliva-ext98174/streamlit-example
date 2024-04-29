@@ -4,6 +4,11 @@ import pandas as pd
 import json
 from streamlit.web.server.websocket_headers import _get_websocket_headers
 
+websocket_headers = _get_websocket_headers()
+kbc_user_email = websocket_headers.get('X-Kbc-User-Email', '')
+app_trace_id = websocket_headers.get('X-Appgw-Trace-Id', '')
+original_host = websocket_headers.get('X-Original-Host', '')
+
 # Set the app title 
 st.title('Test editace metadat') 
 have_it = None
