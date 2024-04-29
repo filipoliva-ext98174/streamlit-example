@@ -6,6 +6,7 @@ import json
 # Set the app title 
 st.title('Test editace metadat') 
 have_it = None
+cnt = 1
 
 menu = ["Home","About"]
 choice = st.sidebar.selectbox("Menu",menu)
@@ -25,11 +26,13 @@ st.experimental_data_editor(input_df)
 if st.button('Zjisti jméno'):
     if have_it == True:
         st.write('Stisknuto') 
-        st.write(have_it) 
+        cnt = cnt + 1
+        st.write(cnt) 
         have_it = False
     else:
         st.write('Nestisknuto')
-        st.write(have_it)
+        cnt = cnt + 1
+        st.write(cnt)
         have_it = True
 
 
