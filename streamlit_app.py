@@ -5,7 +5,7 @@ import json
 
 # Set the app title 
 st.title('Test editace metadat') 
-have_it = false
+have_it = False
 menu = ["Home","About"]
 choice = st.sidebar.selectbox("Menu",menu)
 if choice == "Home":
