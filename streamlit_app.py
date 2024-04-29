@@ -13,9 +13,9 @@ else:
     st.subheader("About")
 
 input_df = pd.DataFrame.from_dict({
-    'field_1': ["some", "values"],
-    'field_2': ["other", "values"],
-    'field_3': range(1, 2)
+    'Jméno': ["some", "values"],
+    'Příjmení': ["other", "values"],
+    'Score': [1555, 222],
 })
 st.write(input_df)
 
