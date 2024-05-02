@@ -24,11 +24,14 @@ if choice == "Home":
 else:
     st.subheader("About")
 
-input_df = pd.DataFrame.from_dict({
+input_df = pd.DataFrame.from_dict(
+{   
     'Jméno': ["Filip", "Martin"],
     'Příjmení': ["Ruka", "Noha"],
     'Score': [1555, 222],
-})
+}
+
+)
 
 
 #st.write(input_df)
