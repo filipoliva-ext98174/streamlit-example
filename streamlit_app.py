@@ -2,6 +2,7 @@ import streamlit as st
 import numpy  as np
 import pandas as pd
 import json
+import pyflowchart
 from streamlit.web.server.websocket_headers import _get_websocket_headers
 
 websocket_headers = _get_websocket_headers()
